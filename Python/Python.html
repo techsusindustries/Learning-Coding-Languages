@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Mastery Roadmap</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            --accent-blue: #1e3a8a;
+            --light-blue: #3b82f6;
+            --text-main: #e0e0e0;
+            --text-muted: #a0a0a0;
+            --python-gold: #ffd43b;
+            --python-blue: #306998;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            border-bottom: 2px solid var(--accent-blue);
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #306998, #ffd43b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .phase-section {
+            margin-bottom: 50px;
+        }
+
+        .phase-header {
+            background: linear-gradient(135deg, var(--accent-blue), #101827);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            border-left: 5px solid var(--python-gold);
+        }
+
+        .phase-header h2 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+
+        .phase-meta {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-top: 5px;
+            font-style: italic;
+        }
+
+        .week-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1max));
+            gap: 20px;
+        }
+
+        .week-card {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            padding: 25px;
+            border: 1px solid #333;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .week-card:hover {
+            border-color: var(--light-blue);
+            transform: translateY(-2px);
+        }
+
+        .week-card h3 {
+            color: var(--light-blue);
+            margin-top: 0;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+            font-size: 1.4rem;
+        }
+
+        .day-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .day-item {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .day-label {
+            font-family: 'Fira Code', 1ospace;
+            background-color: #2d3748;
+            color: var(--python-gold);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-right: 12px;
+            min-width: 35px;
+            text-align: center;
+            margin-top: 4px;
+        }
+
+        .day-content {
+            font-size: 0.95rem;
+        }
+
+        .pro-tip {
+            background-color: rgba(60, 100, 255, 0.1);
+            border: 1px dashed var(--light-blue);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 40px;
+        }
+
+        .pro-tip h4 {
+            margin-top: 0;
+            color: var(--python-gold);
+        }
+
+        @media (max-width: 600px) {
+            .week-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Python Learning Roadmap</h1>
+        <p>Master the language from grammar to complex applications.</p>
+    </header>
+
+    <div class="phase-section">
+        <div class="phase-header">
+            <h2>🐍 Phase 1: Python Core</h2>
+            <div class="phase-meta">Focus: Learning the "Grammar" of the language.</div>
+        </div>
+
+        <div class="week-grid">
+            <div class="week-card">
+                <h3>Part 1: The Basics</h3>
+                <ul class="day-list">
+                    <li class="day-item"><span class="day-label">1</span><div class="day-content"><strong>Setup:</strong> VS Code, Python 3.12+. Write "Hello World" and learn Variables (Integers, Strings, Booleans).</div></li>
+                    <li class="day-item"><span class="day-label">2</span><div class="day-content"><strong>Math:</strong> Operators (+, -, *, /, //, %) and F-Strings (how to put variables inside text).</div></li>
+                    <li class="day-item"><span class="day-label">3</span><div class="day-content"><strong>Logic:</strong> Conditionals (if, elif, else) and Logic Operators (and, or, not).</div></li>
+                    <li class="day-item"><span class="day-label">4</span><div class="day-content"><strong>Lists:</strong> Creating, adding, removing, and "slicing" them.</div></li>
+                    <li class="day-item"><span class="day-label">5</span><div class="day-content"><strong>Loops P1:</strong> for loops (Iterating through lists).</div></li>
+                    <li class="day-item"><span class="day-label">6</span><div class="day-content"><strong>Loops P2:</strong> while loops and the range() function.</div></li>
+                    <li class="day-item"><span class="day-label">7</span><div class="day-content"><strong>Review:</strong> Build a script that plays "FizzBuzz" or a simple "Guess the Number" game.</div></li>
+                </ul>
+            </div>
+
+            <div class="week-card">
+                <h3>Part 2: Functions & Data</h3>
+                <ul class="day-list">
+                    <li class="day-item"><span class="day-label">1</span><div class="day-content"><strong>Dictionaries:</strong> Key-Value pairs. This is how you'll store complex data later.</div></li>
+                    <li class="day-item"><span class="day-label">2</span><div class="day-content"><strong>Tuples & Sets:</strong> Learn why they are different from Lists (immutability).</div></li>
+                    <li class="day-item"><span class="day-label">3</span><div class="day-content"><strong>Functions 101:</strong> Defining them, calling them, and passing "Arguments."</div></li>
+                    <li class="day-item"><span class="day-label">4</span><div class="day-content"><strong>Return Values:</strong> Understanding how to get data out of a function.</div></li>
+                    <li class="day-item"><span class="day-label">5</span><div class="day-content"><strong>Scope:</strong> Why a variable created inside a function doesn't exist outside of it.</div></li>
+                    <li class="day-item"><span class="day-label">6</span><div class="day-content"><strong>List Comprehensions:</strong> This is the "Pythonic" way to make lists fast.</div></li>
+                    <li class="day-item"><span class="day-label">7</span><div class="day-content"><strong>Review:</strong> Build a "Contact Book" script using Dictionaries and Functions.</div></li>
+                </ul>
+            </div>
+
+            <div class="week-card">
+                <h3>Part 3: Handling & Modules</h3>
+                <ul class="day-list">
+                    <li class="day-item"><span class="day-label">1</span><div class="day-content"><strong>Try/Except:</strong> How to stop your code from crashing when it hits an error.</div></li>
+                    <li class="day-item"><span class="day-label">2</span><div class="day-content"><strong>Reading Files:</strong> How to open and read .txt files.</div></li>
+                    <li class="day-item"><span class="day-label">3</span><div class="day-content"><strong>Writing Files:</strong> Saving data from your code into a file.</div></li>
+                    <li class="day-item"><span class="day-label">4</span><div class="day-content"><strong>Imports:</strong> Using Python’s built-in libraries like math, random, and os.</div></li>
+                    <li class="day-item"><span class="day-label">5</span><div class="day-content"><strong>PIP & Venv:</strong> How to install other people's code safely.</div></li>
+                    <li class="day-item"><span class="day-label">6</span><div class="day-content"><strong>Datetime:</strong> Handling time and dates in code.</div></li>
+                    <li class="day-item"><span class="day-label">7</span><div class="day-content"><strong>Review:</strong> Build a "Journal App" that lets you type a note and saves it to a file with a timestamp.</div></li>
+                </ul>
+            </div>
+
+            <div class="week-card">
+                <h3>Part 4: OOP</h3>
+                <ul class="day-list">
+                    <li class="day-item"><span class="day-label">1</span><div class="day-content"><strong>Classes:</strong> The blueprint vs. the house.</div></li>
+                    <li class="day-item"><span class="day-label">2</span><div class="day-content"><strong>__init__:</strong> How to give your objects "data" when they are born.</div></li>
+                    <li class="day-item"><span class="day-label">3</span><div class="day-content"><strong>Methods:</strong> Functions that belong to a specific Class.</div></li>
+                    <li class="day-item"><span class="day-label">4</span><div class="day-content"><strong>Inheritance:</strong> Making a "Child" class that gets features from a "Parent" class.</div></li>
+                    <li class="day-item"><span class="day-label">5</span><div class="day-content"><strong>Encapsulation:</strong> Private vs. Public variables (keeping your data safe).</div></li>
+                    <li class="day-item"><span class="day-label">6</span><div class="day-content"><strong>Practice:</strong> Build a "Car" class or a "Player" class for a game.</div></li>
+                    <li class="day-item"><span class="day-label">7</span><div class="day-content"><strong>Review:</strong> Build a "Library System" where Book and User classes interact.</div></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="phase-section">
+        <div class="phase-header">
+            <h2>🚀 Phase 2: Python Advanced</h2>
+            <div class="phase-meta">Focus: Building real logic.</div>
+        </div>
+
+        <div class="week-grid">
+            <div class="week-card">
+                <h3>Part 5: Intermediate Logic</h3>
+                <ul class="day-list">
+                    <li class="day-item"><span class="day-label">1</span><div class="day-content">*args and **kwargs. Take any number of inputs.</div></li>
+                    <li class="day-item"><span class="day-label">2</span><div class="day-content">Lambda Functions. Short, one-line functions.</div></li>
+                    <li class="day-item"><span class="day-label">3</span><div class="day-content">Map, Filter, and Reduce. Data processing without long loops.</div></li>
+                    <li class="day-item"><span class="day-label">4</span><div class="day-content">Iterators & Generators. Handling massive data without using all your RAM.</div></li>
+                    <li class="day-item"><span class="day-label">5</span><div class="day-content">Decorators. "Wrapping" a function to add extra behavior.</div></li>
+                    <li class="day-item"><span class="day-label">6</span><div class="day-content">Regex. Searching through text like a pro.</div></li>
+                    <li class="day-item"><span class="day-label">7</span><div class="day-content"><strong>Challenge:</strong> Write a "Web Scraper" using requests and BeautifulSoup.</div></li>
+                </ul>
+            </div>
+
+            <div class="week-card">
+                <h3>Part 6: External Data</h3>
+                <ul class="day-list">
+                    <li class="day-item"><span class="day-label">1</span><div class="day-content">JSON. How Python talks to the internet and other apps.</div></li>
+                    <li class="day-item"><span class="day-label">2</span><div class="day-content">API Basics. Using the requests library to get data.</div></li>
+                    <li class="day-item"><span class="day-label">3</span><div class="day-content">Working with CSVs. Handling spreadsheets in Python.</div></li>
+                    <li class="day-item"><span class="day-label">4</span><div class="day-content">Database Basics (SQLite). Storing data in a real database.</div></li>
+                    <li class="day-item"><span class="day-label">5</span><div class="day-content">SQL Queries. How to ask a database for specific information.</div></li>
+                    <li class="day-item"><span class="day-label">6</span><div class="day-content">Python + SQL. Connecting your code to SQLite.</div></li>
+                    <li class="day-item"><span class="day-label">7</span><div class="day-content"><strong>Project:</strong> Build a "Weather App" with real API data and a DB.</div></li>
+                </ul>
+            </div>
+
+            <div class="week-card">
+                <h3>Part 7: Building Apps with Tkinter/PySide</h3>
+                <p>Note: this part isnt exactly required for learning Python, but if you want interfaces/GUIs your gonna want to do this section as well
+                <ul class="day-list">
+                    <li class="day-item"><span class="day-label">1-2</span><div class="day-content">UI Basics (Tkinter or PySide). Making windows with buttons.</div></li>
+                    <li class="day-item"><span class="day-label">3-4</span><div class="day-content">Threading. How to do two things at once in your code.</div></li>
+                    <li class="day-item"><span class="day-label">5</span><div class="day-content">sys and shutil. Automating your computer's files.</div></li>
+                    <li class="day-item"><span class="day-label">6</span><div class="day-content">Project Planning. Decide on a large app for next week.</div></li>
+                    <li class="day-item"><span class="day-label">7</span><div class="day-content">Mock Interview. Solve 3 "Easy" LeetCode problems.</div></li>
+                </ul>
+            </div>
+
+            <div class="week-card">
+                <h3>Part 8: Final Project</h3>
+                <ul class="day-list">
+                    <li class="day-item"><span class="day-label">1-7</span><div class="day-content"><strong>The final build composing most of your knowledge:</strong> Spend the week building one complex app (Desktop Assistant, Discord bot(requires discord.py), File Organizer, etc.).</div></li>
+                    <li class="day-item"><span class="day-label">Goal</span><div class="day-content">Use Classes, APIs, Error Handling, and a Database in one project.</div></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="pro-tip">
+        <h4>💡 Pro-Tip for your practicing:</h4>
+        <p>Don't just watch videos. Spend 1 hour learning and a few hours typing. If you finish a day's work in 2 hours, move to the next day immediately. if you're "built for the skills," you might finish this 8-part plan in 5 weeks or less.</p>
+    </div>
+    <br>
+    <footer>Disclaimer: <strong>Most</strong> of this website was vibe coded(im bad at making things look good)</footer>
+</div>
+
+</body>
+</html>
